@@ -1,0 +1,18 @@
+<mvc:View controllerName="mock.test.controller.MainView"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+			<List id="employeeList" headerText="{i18n>ListOfAllEmployees}" items="{/Employees}">
+				<items>
+					<StandardListItem
+						title="{FirstName} {LastName}"
+						iconDensityAware="false"
+						type="Navigation"
+						press=".onListItemPressed"
+						iconInset="false"/>
+				</items>
+			</List>
+		</content>
+    </Page>
+</mvc:View>
